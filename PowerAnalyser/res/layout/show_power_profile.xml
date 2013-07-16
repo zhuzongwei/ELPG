@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" 
+              android:text="@string/power_profile" 
+              android:id="@+id/textView1" 
+              android:layout_width="fill_parent" 
+              android:layout_height="50dp" 
+              android:layout_gravity="center_horizontal" 
+              android:gravity="center"
+              >
+    </TextView> 
+    <LinearLayout 
+        android:id="@+id/powerProfileTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <TableLayout 
+        android:id="@+id/powerProfileTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:stretchColumns="1"
+        >
+
+
+        <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_capacity" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryCapacity"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+
+          </TableRow>
+          
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/screen_on" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/screenOn"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/screen_full" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/screenFull"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>    
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/bluetooth_active" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/bluetoothActive"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/bluetooth_on" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/bluetoothOn"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/bluetooth_at" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/bluetoothAt"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+           <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/wifi_on" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/wifiOn"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+           <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/wifi_active" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/wifiActive"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/wifi_scan" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/wifiScan"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/dsp_audio" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/dspAudio"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/dsp_video" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/dspVideo"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/radio_on" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/radioOn"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow> 
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/radio_active" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/radioActive"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>     
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/radio_scanning" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/radioScanning"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>  
+           
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/gps_on" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/gpsOn"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>   
+          <TableRow>
+            <TextView
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/cpu_idle" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/cpuIdle"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow> 
+            
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/cpu_awake" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/cpuAwake"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/cpu_speeds" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/cpuSpeeds"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/cpu_active" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/cpuActive"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow> 
+                                                         
+    </TableLayout>
+    </ScrollView> 
+    </LinearLayout>
+</LinearLayout>

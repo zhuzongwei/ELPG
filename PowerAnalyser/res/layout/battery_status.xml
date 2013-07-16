@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" 
+              android:text="@string/battery_statue" 
+              android:id="@+id/textView1" 
+              android:layout_width="fill_parent" 
+              android:layout_height="50dp" 
+              android:layout_gravity="center_horizontal" 
+              android:gravity="center"
+              >
+    </TextView> 
+    <TableLayout 
+        android:id="@+id/batteryStatusTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+        <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_status" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryStatus"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_health" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryHealth"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_present" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryPresent"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>    
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_level" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryLevel"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_scale" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryScale"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_plugged" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryPlugged"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+           <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_voltage" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryVoltage"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+           <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_temperature" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryTemperature"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+          <TableRow>
+            <TextView 
+                android:layout_width="100dp"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:text="@string/battery_technology" 
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+                android:id="@+id/batteryTechnology"
+                android:layout_gravity="left"
+                android:padding="5dip"
+                android:textStyle="bold"
+                />
+          </TableRow>
+                                          
+    </TableLayout>
+    <LinearLayout android:orientation="vertical"  
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+          <Button android:id="@+id/PowerDetial"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="@string/power_detial"
+              ></Button>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="组件列表" android:key="set_local">
+        <CheckBoxPreference
+            android:key="wifi"
+            android:title="wifi的耗能情况"
+            android:summary="显示各个组件的功耗时显示wifi的数据"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="CPU"
+            android:title="CPU的耗能情况"
+            android:summary="统计各个组件的功耗时加上CPU的数据"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="GPU"
+            android:title="GPU的耗能情况"
+            android:summary="统计各个组件的功耗时加上GPU的数据"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="GPS"
+            android:title="GPS的耗能情况"
+            android:summary="统计各个组件的功耗时加上GPS的数据"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="LED"
+            android:title="LED的耗能情况"
+            android:summary="统计各个组件的功耗时加上LED的数据"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

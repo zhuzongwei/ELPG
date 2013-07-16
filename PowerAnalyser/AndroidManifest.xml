@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ustc.PowerAnalyser"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <receiver android:name="edu.ustc.PowerAnalyser.tools.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="edu.ustc.PowerAnalyser.tools.PowerConnectionReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="edu.ustc.PowerAnalyser.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="edu.ustc.PowerAnalyser.ui.UserBehaviorDetail" >
+        </activity>
+        <activity android:name="edu.ustc.PowerAnalyser.chartengine.chart.ComponentsLineChartActivity" >
+        </activity>
+        <activity android:name="edu.ustc.PowerAnalyser.chartengine.chart.ComponentsPieChartActivity" >
+        </activity>
+        <activity android:name="edu.ustc.PowerAnalyser.chartengine.chart.BatteryStatisticsActivity" >
+        </activity>
+        <activity android:name="edu.ustc.PowerAnalyser.chartengine.chart.ModelsComparisonChartActivity" >
+        </activity>
+        <activity android:name="edu.ustc.PowerAnalyser.ui.ApplicationList" >
+        </activity>
+        <activity
+            android:name="edu.ustc.PowerAnalyser.AppListView"
+            android:label="@string/title_activity_app_list_view" >
+        </activity>
+        <activity
+            android:name="edu.ustc.PowerAnalyser.chartengine.chart.AppStatisticsActivity"
+            android:label="@string/title_activity_app_statistics" >
+        </activity>
+
+        <service
+            android:name="edu.ustc.PowerAnalyser.powerme.PowerAnalyserService"
+            android:enabled="true"
+            android:process=".remotePowerService" >
+        </service>
+        <service
+            android:name="edu.ustc.PowerAnalyser.log.LogHunterService"
+            android:enabled="true"
+            android:process=".remoteLogService" >
+        </service>
+
+        <activity
+            android:name="edu.ustc.PowerAnalyser.ApplicationList"
+            android:label="@string/title_activity_application_list" >
+        </activity>
+        <activity
+            android:name="edu.ustc.PowerAnalyser.log.LogActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="edu.ustc.PowerAnalyser.ui.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <service
+            android:name="edu.ustc.PowerAnalyser.tools.MonitorChargeService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="edu.ustc.PowerAnalyser.ui.UserBehaviorActivity"
+            android:label="@string/title_activity_user_behavior" >
+        </activity>
+    </application>
+
+</manifest>

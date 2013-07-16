@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">PowerAnalyser</string>
+    <string name="menu_settings">Settings</string>
+    <string name="chart_sheet">分析与报告</string>
+    <string name="app_top">应用耗电统计</string>
+    <string name="battery_statue">电池状态信息</string>
+    <string name="power_profile">Power Profile 信息</string>
+    <string name="save_values">Save as Picture</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="save">Save</string>
+    <string name="new_series">New series</string>
+    <string name="title_activity_app_list_view">AppListView</string>
+    <string name="dialog_title">第一次使用</string>
+    <string name="dialog_msg">检测到您是第一次使用本软件，请输入您手机电池电量和充电电流。</string>
+    <string name="dialog_capacity">电池电量(mAh)</string>
+    <string name="dialog_current">充电电流 (mA)</string>
+    <string name="dialog_ok">确定</string>
+    <string name="battery_status">充电状态：</string>
+    <string name="battery_health">健康状态：</string>
+    <string name="battery_present">使用状态：</string>
+    <string name="battery_level">剩余电量：</string>
+    <string name="battery_scale">总电量：</string>
+    <string name="battery_plugged">充电类型：</string>
+    <string name="battery_voltage">电池电压：</string>
+    <string name="battery_temperature">电池温度：</string>
+    <string name="battery_technology">电池技术：</string>
+    <string name="power_detial">显示详细情况</string>
+    <string name="battery_capacity">battery.capacity: </string>
+    <string name="screen_on">screen.on: </string>
+    <string name="screen_full">screen.full: </string>
+    <string name="bluetooth_active">bluetooth.active: </string>
+    <string name="bluetooth_on">bluetooth.on: </string>
+    <string name="bluetooth_at">bluetooth.at: </string>
+    <string name="wifi_on">wifi.on: </string>
+    <string name="wifi_active">wifi.active: </string>
+    <string name="wifi_scan">wifi.scan: </string>
+    <string name="dsp_audio">dsp.audio: </string>
+    <string name="dsp_video">dsp.video: </string>
+    <string name="radio_active">radio.active: </string>
+    <string name="gps_on">gps.on: </string>
+    <string name="radio_scanning">radio.scanning: </string>
+    <string name="radio_on">radio.on: </string>
+    <string name="cpu_speeds">cpu.speeds: </string>
+    <string name="cpu_idle">cpu.idle: </string>
+    <string name="cpu_active">cpu.active: </string>
+    <string name="cpu_awake">cpu.awake: </string>
+
+    <!-- Label for power consumed by the screen -->
+    <string name="power_screen">Screen</string>
+    <!-- Label for power consumed by Wi-Fi -->
+    <string name="power_wifi">Wi-Fi</string>
+    <!-- Label for power consumed by Bluetooth -->
+    <string name="power_bluetooth">Bluetooth</string>
+    <!-- Label for power consumed by Cell idle -->
+    <string name="power_cell">Cell standby</string>
+    <!-- Label for power consumed by Calling -->
+    <string name="power_phone">Voice calls</string>
+    <!-- Label for power consumed when Idle -->
+    <string name="power_idle" product="tablet">Tablet idle</string>
+    <!-- Label for power consumed when Idle -->
+    <string name="power_idle" product="default">Phone idle</string>
+    <!-- Display the battery level and status [CHAR_LIMIT=30] -->
+    <string name="power_usage_level_and_status"><xliff:g id="level">%1$s</xliff:g> - <xliff:g id="status">%2$s</xliff:g></string>
+
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_label">Battery status:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_power_label">Power plug:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_scale_label">Battery scale:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_level_label">Battery level:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_label">Battery health:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_technology_label">Battery technology:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_voltage_label">Battery voltage:</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_voltage_units">mV</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_temperature_label">Battery temperature:</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_temperature_units">\u00B0 C</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_uptime">Time since boot:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_awake_battery">Awake time on battery:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_awake_plugged">Awake time when charging:</string>
+    <!-- Battery Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_screen_on">Screen ON time:</string>
+
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_unknown">Unknown</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_charging">Charging</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_charging_ac">(AC)</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_charging_usb">(USB)</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_discharging">Discharging</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_not_charging">Not charging</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_status_full">Full</string>
+
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_power_unplugged">Unplugged</string>
+    <string name="battery_info_power_ac">AC</string>
+    <string name="battery_info_power_usb">USB</string>
+    <string name="battery_info_power_ac_usb">AC+USB</string>
+    <string name="battery_info_power_unknown">Unknown</string>
+
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_unknown">Unknown</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_good">Good</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_overheat">Overheat</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_dead">Dead</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_over_voltage">Over voltage</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_unspecified_failure">Unknown error</string>
+    <!-- Battery Info screen. Value for a status item. Used for diagnostic info screens, precise translation isn't needed -->
+    <string name="battery_info_health_cold">Cold</string>
+
+    <!-- Label for kernel threads -->
+    <string name="process_kernel_label">Android OS</string>
+    <!-- Label for mediaserver process -->
+    <string name="process_mediaserver_label">Mediaserver</string>
+    <string name="title_activity_app_statistics">AppStatisticsActivity</string>
+    <string name="title_activity_application_list">ApplicationList</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_battery">BatteryActivity</string>
+    <string name="title_activity_user_behavior">用户行为</string>
+
+</resources>
